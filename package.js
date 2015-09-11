@@ -1,8 +1,8 @@
 Package.describe({
     summary: 'CarbonRouter - An alternative, lightweight, modular client side router for Meteor',
-    version: "0.2.0",
-    name: "gfk:carbon-router",
-    git: "https://github.com/gfk-ba/carbon-router.git"
+    version: "0.2.1",
+    name: "tbknl:carbon-router",
+    git: "https://github.com/tbknl/carbon-router.git"
 });
 
 
@@ -33,7 +33,7 @@ Package.onUse(function (api) {
 
 
 Package.onTest(function (api) {
-    api.use('gfk:carbon-router', ['client', 'server']);
+    api.use('tbknl:carbon-router', ['client', 'server']);
     api.use(['tinytest', 'practicalmeteor:munit@2.1.2', 'underscore'], ['client', 'server']);
 
     api.addFiles('test/util.js', 'client');
